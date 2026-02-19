@@ -54,6 +54,9 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   transition: opacity 0.8s ease;
 }
 
+.sales-area{
+  display: none;
+}
 
 .sales-area{
   max-width:1100px;
@@ -389,18 +392,14 @@ document.addEventListener(
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  
-  setTimeout(function() {
-    var section = document.querySelector(".sales-section");
-    if(section){
-      section.style.visibility = "visible";
-      section.style.opacity = "1";
-    }
-  }, 2217000); // 36 minutos e 57 segundos
-
-});
+setTimeout(function() {
+  var section = document.querySelector('.sales-area');
+  if(section){
+    section.style.display = 'block';
+  }
+}, 2217000); // 36 minutos e 57 segundos
 </script>
+
 
 
 
@@ -411,6 +410,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 
